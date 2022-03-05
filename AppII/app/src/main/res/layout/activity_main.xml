@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="20dp"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+    </LinearLayout>
+    <TextView
+        android:text="Giải phương trình bậc 2"
+        android:textSize="25sp"
+        android:textColor="#EE2400"
+        android:layout_marginBottom="40dp"
+        android:textStyle="bold"
+        android:textAllCaps="true"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nhập a:"
+            android:textSize="20sp"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp" />
+        <EditText
+            android:id="@+id/edta"
+            android:hint="Nhap gia tri a"
+            android:textSize="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nhập b:"
+            android:textSize="20sp"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <EditText
+            android:id="@+id/edtb"
+            android:hint="Nhap gia tri b"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:text="Nhập c:"
+            android:textSize="20sp"
+            android:textColor="@color/design_default_color_primary"
+            android:textStyle="bold"
+            android:layout_marginTop="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"/>
+        <EditText
+            android:id="@+id/edtc"
+            android:hint="Nhap gia tri c"
+            android:textSize="20sp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnGiai"
+            android:text="Giai PT"
+            android:textSize="20sp"
+            android:layout_marginTop="25dp"
+            android:textColor="#FFC107"
+            android:layout_marginRight="30dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <Button
+            android:id="@+id/btnThoat"
+            android:text="Thoat"
+            android:textSize="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="#FFC107"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+</LinearLayout>
