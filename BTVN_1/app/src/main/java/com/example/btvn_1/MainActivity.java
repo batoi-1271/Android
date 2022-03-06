@@ -35,7 +35,7 @@ public class MainActivity extends AppCompatActivity {
         String web = cWeb.getText().toString();
         String asp = cAsp.getText().toString();
 
-        if (name.isEmpty()) {
+        if (name.matches("")) {
             Toast.makeText(MainActivity.this, "Enter name", Toast.LENGTH_LONG).show();
             return false;
         }
