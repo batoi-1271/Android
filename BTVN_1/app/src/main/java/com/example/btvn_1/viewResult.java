@@ -45,7 +45,7 @@ public class viewResult extends AppCompatActivity {
 
             String source = bl2.getString("Source");
 
-            tvResult.setText("Name: " + name + "\nPhone:" + phone + "\nMail:" + mail + "\nAddress:" + address + "\nGender: " + gender + "\nSource: " + source);
+            tvResult.setText("Name: " + name + "\nPhone:" + phone + "\nMail:" + mail + "\nAddress:" + address + "\nGender: " + gender + "\nSource: \n" + source);
 
         }
     }

@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity {
     private CheckBox cAndroid, cWeb, cAsp;
     private Button btnRun, btnExit;
     String gender;
-    String source;
+    String source ="";
 
     private boolean check() {
         String name = edName.getText().toString();
@@ -71,9 +71,12 @@ public class MainActivity extends AppCompatActivity {
 
         if (cAndroid.isChecked() || cWeb.isChecked() || cAsp.isChecked()) {
             Log.d("QAOD", "Source is Selected");
-            if (cAndroid.isChecked()) source = "Android";
-            if (cWeb.isChecked()) source = "Web";
-            if (cAsp.isChecked()) source = "Asp";
+            if(cAndroid.isChecked())
+                source+=cAndroid.getText()+"\n";
+            if(cWeb.isChecked())
+                source+=cWeb.getText()+"\n";
+            if(cAsp.isChecked())
+                source+=cAsp.getText()+"\n";
         } else {
             Toast.makeText(getApplicationContext(), "Please select Source", Toast.LENGTH_SHORT).show();
             Log.d("QAOD", "Source is Null");
@@ -120,9 +123,7 @@ public class MainActivity extends AppCompatActivity {
                     bl1.putString("Phone", edPhone.getText().toString());
                     bl1.putString("Mail", edMail.getText().toString());
                     bl1.putString("Address", edAdd.getText().toString());
-
                     bl1.putString("Gender", gender);
-
                     bl1.putString("Source", source);
 
                     // 3,5 Dua Bundle vao trong Intent 1
