@@ -125,7 +125,7 @@ public class MainActivity extends AppCompatActivity {
                     bl1.putString("Address", edAdd.getText().toString());
                     bl1.putString("Gender", gender);
                     bl1.putString("Source", source);
-
+                    //
                     // 3,5 Dua Bundle vao trong Intent 1
                     it1.putExtras(bl1);
                     startActivity(it1);
