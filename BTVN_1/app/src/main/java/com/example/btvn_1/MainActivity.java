@@ -15,12 +15,12 @@ import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
 
-     EditText edName,edPhone, edMail, edAdd;
+    private EditText edName,edPhone, edMail, edAdd;
     private RadioButton rMale, rFemale;
     private CheckBox cAndroid, cWeb, cAsp;
     private Button btnRun, btnExit;
-    String gender;
-    String source ="";
+    private String gender;
+    private String source ="";
 
     private boolean check() {
         String name = edName.getText().toString();
@@ -72,7 +72,7 @@ public class MainActivity extends AppCompatActivity {
         if (cAndroid.isChecked() || cWeb.isChecked() || cAsp.isChecked()) {
             Log.d("QAOD", "Source is Selected");
             if(cAndroid.isChecked())
-                source+=cAndroid.getText()+"\n";
+                source=cAndroid.getText()+"\n";
             if(cWeb.isChecked())
                 source+=cWeb.getText()+"\n";
             if(cAsp.isChecked())
