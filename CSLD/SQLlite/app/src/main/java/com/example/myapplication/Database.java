@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
 
-    public  static final String DATABASE_NAME = "DB.QLSinhVien";
+    public  static final String DATABASE_NAME = "QLSinhVien.db";
     public static final String TABLE_NAME = "tbSinhvien";
 
     public static final String ID = "id";
@@ -33,12 +33,12 @@ public class Database extends SQLiteOpenHelper {
     // CREATE TABLE
     @Override
     public void onCreate(SQLiteDatabase db) {
-        String slqQuery = "CREATE TABLE " + TABLE_NAME + "("
-                + ID + " integer primary key autoincrement, "
-                + NAME + "Text, "
-                + CLASS + "Text, "
-                + ADDRESS + "Text, "
-                + PHONE + "Text)";
+        String slqQuery = "CREATE TABLE "+TABLE_NAME+ "("
+                +ID + " integer primary key autoincrement, "
+                +NAME+ " Text, "
+                +CLASS + " Text, "
+                +ADDRESS + " Text, "
+                +PHONE + " Text ) ";
         db.execSQL(slqQuery);
     }
 
@@ -92,7 +92,8 @@ public class Database extends SQLiteOpenHelper {
         if (cursor.moveToFirst()) {
             do {
                 SinhVien sv = new SinhVien();
-                cursor.getInt(0);
+//                cursor.getInt(0);
+                sv.setId(Integer.parseInt(cursor.getString(0)));
                 sv.setHoten(cursor.getString(1));
                 sv.setLop(cursor.getString(2));
                 sv.setDiachi(cursor.getString(3));
