@@ -44,8 +44,8 @@
         <Button
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginRight="20dp"
             android:layout_below="@+id/edtPass"
+            android:layout_marginRight="20dp"
             android:layout_toLeftOf="@+id/fgPass"
             android:text="Login" />
 

@@ -13,7 +13,7 @@ import java.util.List;
 
 public class Database extends SQLiteOpenHelper {
 
-    public  static final String DATABASE_NAME = "QLSinhVien.db";
+    public static final String DATABASE_NAME = "QLSinhVien.db";
     public static final String TABLE_NAME = "tbSinhvien";
 
     public static final String ID = "id";
